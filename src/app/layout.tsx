@@ -1,13 +1,13 @@
 import type { Metadata } from 'next'
 import { Space_Grotesk } from 'next/font/google'
 import '../styles/globals.css'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+import Navbar from '../components/navbar'
+import Footer from '../components/footer'
 
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Fachru - CS Student Portfolio',
+  title: 'Fachru',
   description: 'Computer Science Student - Networks, Data Analysis, and Cloud Technologies',
 }
 

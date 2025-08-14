@@ -15,7 +15,7 @@ const HeroSection = () => {
                 <div className="absolute inset-0 flex items-center justify-center">
                     <div className="w-96 h-[600px] relative overflow-hidden rounded-lg">
                         <Image
-                            src="/public/images/hero.jpg"
+                            src="/images/hero.jpg"
                             alt="Silhouette"
                             fill
                             className="object-cover silhouette-image"
