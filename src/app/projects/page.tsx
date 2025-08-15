@@ -18,7 +18,7 @@ export default function Projects() {
     ]
 
     return (
-        <div className="min-h-screen bg-red-500 py-20">
+        <div className="min-h-screen py-20">
             <div className="container mx-auto px-8">
                 <h1 className="text-6xl font-black text-black mb-12">
                     WORKS

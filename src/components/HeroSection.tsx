@@ -13,9 +13,9 @@ const HeroSection = () => {
             {/* Left Side - Silhouette Image */}
             <div className="w-1/2 h-screen relative">
                 <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-96 h-[600px] relative overflow-hidden rounded-lg">
+                    <div className="w-120 h-[600px] relative overflow-hidden rounded-lg">
                         <Image
-                            src="/images/hero.jpg"
+                            src="/image/hero.jpg"
                             alt="Silhouette"
                             fill
                             className="object-cover silhouette-image"

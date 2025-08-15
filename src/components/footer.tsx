@@ -58,7 +58,7 @@ const Footer = () => {
                             </h4>
                             <div className="flex flex-col space-y-4">
                                 <a
-                                    href="#"
+                                    href="https://github.com/VeryFach"
                                     className="group flex items-center justify-center lg:justify-end gap-3 text-gray-400 hover:text-red-400 transition-all duration-300"
                                 >
                                     <span className="tracking-widest group-hover:tracking-wide transition-all duration-300">
@@ -69,7 +69,7 @@ const Footer = () => {
                                     </svg>
                                 </a>
                                 <a
-                                    href="#"
+                                    href="www.linkedin.com/in/very-fachrurozi"
                                     className="group flex items-center justify-center lg:justify-end gap-3 text-gray-400 hover:text-blue-400 transition-all duration-300"
                                 >
                                     <span className="tracking-widest group-hover:tracking-wide transition-all duration-300">

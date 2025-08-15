@@ -8,7 +8,7 @@ const spaceGrotesk = Space_Grotesk({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Fachru',
-  description: 'Computer Science Student - Networks, Data Analysis, and Cloud Technologies',
+  description: 'Computer Science Student',
 }
 
 export default function RootLayout({

@@ -48,18 +48,19 @@ const Navbar = () => {
             {/* Navbar */}
             <nav className={`
                 fixed left-6 top-1/2 -translate-y-1/2 z-10 transition-all duration-500 ease-out
-                ${isVisible 
-                    ? 'translate-x-0 opacity-100' 
+                ${isVisible
+                    ? 'translate-x-0 opacity-100'
                     : '-translate-x-full opacity-0'
                 }
             `}>
-                <div className="flex flex-col space-y-8">
+                <div className="flex flex-col">
                     {menuItems.map((item) => (
                         <Link
                             key={item.href}
                             href={item.href}
                             className={`
-                                px-16 py-6 text-xl font-semibold transition-all duration-300 rounded-full
+                                px-20 py-8 mb-12 last:mb-0
+                                text-xl font-semibold transition-all duration-300 rounded-full
                                 backdrop-blur-md border border-white/20 shadow-lg min-w-[240px] text-center
                                 ${pathname === item.href
                                     ? 'bg-black/70 text-white border-black/30'
