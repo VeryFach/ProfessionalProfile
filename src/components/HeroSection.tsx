@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const HeroSection = () => {
     return (
-        <section className="min-h-screen bg-red-500 flex items-center">
+        <section className="min-h-screen flex items-center">
             {/* Header Title */}
             <div className="absolute top-8 left-8 z-20">
                 <h1 className="text-2xl font-bold text-black tracking-wide">
