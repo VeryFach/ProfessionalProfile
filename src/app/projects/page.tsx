@@ -1,23 +1,23 @@
 export default function Projects() {
     const projects = [
         {
-            title: "Network Traffic Analyzer",
-            description: "Real-time network packet analysis tool using Python and Wireshark for comprehensive network monitoring and security assessment",
+            title: "Phishing Email Detection",
+            description: "A model designed to classify emails as phishing or legitimate based on textual features and email metadata",
             image: "https://via.placeholder.com/400x240/1f2937/ffffff?text=Network+Analysis"
         },
         {
-            title: "Cloud Infrastructure Dashboard",
-            description: "AWS-based monitoring dashboard for cloud resources with real-time metrics and automated alerting systems",
+            title: "Obesity Risk Classification",
+            description: "A multi-class classification model to assess obesity risk levels (0 to 6) based on demographic, lifestyle, and family history factors",
             image: "https://via.placeholder.com/400x240/3b82f6/ffffff?text=Cloud+Dashboard"
         },
         {
-            title: "Data Pipeline Automation",
-            description: "Automated ETL pipeline for big data processing with scalable architecture and monitoring capabilities",
+            title: "Bemon",
+            description: "This game project use GUI java ",
             image: "https://via.placeholder.com/400x240/059669/ffffff?text=Data+Pipeline"
         },
         {
-            title: "Security Audit Tool",
-            description: "Comprehensive security assessment platform for vulnerability detection and compliance reporting",
+            title: "Shift Left security",
+            description: "integrates security checks at the start of development, not the end",
             image: "https://via.placeholder.com/400x240/dc2626/ffffff?text=Security+Audit"
         },
         {
