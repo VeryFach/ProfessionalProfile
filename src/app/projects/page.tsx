@@ -2,48 +2,96 @@ export default function Projects() {
     const projects = [
         {
             title: "Network Traffic Analyzer",
-            description: "Real-time network packet analysis tool using Python and Wireshark",
-            tech: ["Python", "Wireshark", "Socket Programming"]
+            description: "Real-time network packet analysis tool using Python and Wireshark for comprehensive network monitoring and security assessment",
+            image: "https://via.placeholder.com/400x240/1f2937/ffffff?text=Network+Analysis"
         },
         {
             title: "Cloud Infrastructure Dashboard",
-            description: "AWS-based monitoring dashboard for cloud resources",
-            tech: ["AWS", "React", "Node.js", "CloudWatch"]
+            description: "AWS-based monitoring dashboard for cloud resources with real-time metrics and automated alerting systems",
+            image: "https://via.placeholder.com/400x240/3b82f6/ffffff?text=Cloud+Dashboard"
         },
         {
             title: "Data Pipeline Automation",
-            description: "Automated ETL pipeline for big data processing",
-            tech: ["Apache Spark", "Docker", "Kubernetes", "PostgreSQL"]
+            description: "Automated ETL pipeline for big data processing with scalable architecture and monitoring capabilities",
+            image: "https://via.placeholder.com/400x240/059669/ffffff?text=Data+Pipeline"
+        },
+        {
+            title: "Security Audit Tool",
+            description: "Comprehensive security assessment platform for vulnerability detection and compliance reporting",
+            image: "https://via.placeholder.com/400x240/dc2626/ffffff?text=Security+Audit"
+        },
+        {
+            title: "Machine Learning Platform",
+            description: "End-to-end ML platform for model training, deployment, and monitoring in production environments",
+            image: "https://via.placeholder.com/400x240/7c3aed/ffffff?text=ML+Platform"
+        },
+        {
+            title: "Blockchain Analytics",
+            description: "Cryptocurrency transaction analysis and visualization tool for fraud detection and compliance",
+            image: "https://via.placeholder.com/400x240/f59e0b/ffffff?text=Blockchain+Analytics"
         }
     ]
 
     return (
-        <div className="min-h-screen py-20">
-            <div className="container mx-auto px-8">
-                <h1 className="text-6xl font-black text-black mb-12">
-                    WORKS
-                </h1>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="min-h-screen flex items-center justify-center">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+                {/* Header Section */}
+                <div className="text-center mb-12 sm:mb-16 md:mb-20">
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-black mb-4 sm:mb-6 tracking-tight">
+                        WORKS
+                    </h1>
+                    {/* <div className="w-16 sm:w-20 md:w-24 h-1 sm:h-1.5 bg-black mx-auto rounded-full"></div> */}
+                </div>
+
+                {/* Projects Grid - Fixed 3 columns layout */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
                     {projects.map((project, index) => (
-                        <div key={index} className="bg-white/90 p-8 rounded-lg backdrop-blur-sm">
-                            <h3 className="text-2xl font-bold text-black mb-4">
-                                {project.title}
-                            </h3>
-                            <p className="text-black mb-6 leading-relaxed">
-                                {project.description}
-                            </p>
-                            <div className="flex flex-wrap gap-2">
-                                {project.tech.map((tech, techIndex) => (
-                                    <span
-                                        key={techIndex}
-                                        className="bg-black text-white px-3 py-1 text-sm rounded-full"
-                                    >
-                                        {tech}
-                                    </span>
-                                ))}
+                        <div
+                            key={index}
+                            className="group bg-white/80 backdrop-blur-sm rounded-2xl sm:rounded-3xl overflow-hidden
+                                        shadow-lg hover:shadow-2xl transition-all duration-300 ease-out
+                                        hover:-translate-y-2 hover:bg-white border-2 border-transparent
+                                        hover:border-black/10 flex flex-col"
+                        >
+                            {/* Project Image */}
+                            <div className="relative overflow-hidden h-48 sm:h-52 lg:h-56">
+                                <img
+                                    src={project.image}
+                                    alt={project.title}
+                                    className="w-full h-full object-cover transition-transform duration-300 
+                                                group-hover:scale-110"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent 
+                                                opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+
+                            {/* Content Container */}
+                            <div className="p-6 sm:p-8 lg:p-10 flex-1 flex flex-col">
+                                {/* Project Title */}
+                                <div className="mb-4 sm:mb-6">
+                                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-black leading-tight
+                                                    group-hover:text-red-600 transition-colors duration-300">
+                                        {project.title}
+                                    </h3>
+                                    <div className="w-8 sm:w-12 h-0.5 bg-red-500 mt-2 sm:mt-3 rounded-full
+                                                    group-hover:w-16 sm:group-hover:w-20 transition-all duration-300"></div>
+                                </div>
+
+                                {/* Project Description */}
+                                <p className="text-gray-800 text-sm sm:text-base lg:text-lg leading-relaxed sm:leading-loose 
+                                                mb-6 sm:mb-8 flex-1">
+                                    {project.description}
+                                </p>
                             </div>
                         </div>
                     ))}
+                </div>
+
+                {/* Bottom Spacing */}
+                <div className="mt-12 sm:mt-16 md:mt-20 text-center">
+                    <p className="text-black/80 text-sm sm:text-base font-medium py-100">
+                        Showcasing innovative solutions & technical expertise
+                    </p>
                 </div>
             </div>
         </div>

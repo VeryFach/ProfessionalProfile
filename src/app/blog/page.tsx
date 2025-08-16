@@ -18,7 +18,7 @@ export default function Blog() {
     ]
 
     return (
-        <div className="min-h-screen py-20">
+        <div className="min-h-screen flex items-center justify-center">
             <div className="container mx-auto px-8">
                 <h1 className="text-6xl font-black text-black mb-12">
                     STORIES

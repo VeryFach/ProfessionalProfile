@@ -12,8 +12,8 @@ const Navbar = () => {
         { label: '</>', href: '/' },
         { label: 'WORKS', href: '/projects' },
         { label: 'STORIES', href: '/blog' },
-        { label: 'EXPERIENCES', href: '/about' },
-        { label: 'ABOUT', href: '/contact' },
+        { label: 'EXPERIENCES', href: '/experiences' },
+        { label: 'ABOUT', href: '/about' },
     ]
 
     useEffect(() => {
