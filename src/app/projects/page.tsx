@@ -3,32 +3,32 @@ export default function Projects() {
         {
             title: "Phishing Email Detection",
             description: "A model designed to classify emails as phishing or legitimate based on textual features and email metadata",
-            image: "https://via.placeholder.com/400x240/1f2937/ffffff?text=Network+Analysis"
+            image: "/project/2.png"
         },
         {
             title: "Obesity Risk Classification",
             description: "A multi-class classification model to assess obesity risk levels (0 to 6) based on demographic, lifestyle, and family history factors",
-            image: "https://via.placeholder.com/400x240/3b82f6/ffffff?text=Cloud+Dashboard"
+            image: "/project/3.png"
         },
         {
             title: "Bemon",
             description: "This game project use GUI java ",
-            image: "https://via.placeholder.com/400x240/059669/ffffff?text=Data+Pipeline"
+            image: "/project/4.png"
         },
         {
             title: "Shift Left security",
             description: "integrates security checks at the start of development, not the end",
-            image: "https://via.placeholder.com/400x240/dc2626/ffffff?text=Security+Audit"
+            image: "/project/1.png"
         },
         {
-            title: "Machine Learning Platform",
-            description: "End-to-end ML platform for model training, deployment, and monitoring in production environments",
-            image: "https://via.placeholder.com/400x240/7c3aed/ffffff?text=ML+Platform"
+            title: "House Price Prediction",
+            description: "predicts house prices based on various features such as location, size, and amenities",
+            image: "/project/5.png"
         },
         {
-            title: "Blockchain Analytics",
-            description: "Cryptocurrency transaction analysis and visualization tool for fraud detection and compliance",
-            image: "https://via.placeholder.com/400x240/f59e0b/ffffff?text=Blockchain+Analytics"
+            title: "Interactive Data Framework",
+            description: "Using java swing to create a framework that allows users to interact with data in a more intuitive way",
+            image: "/project/6.png"
         }
     ]
 
