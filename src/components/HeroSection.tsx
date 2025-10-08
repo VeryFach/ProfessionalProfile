@@ -28,23 +28,8 @@ const HeroSection = () => {
             observer.observe(secondSectionRef.current)
         }
 
-        // Auto-reload functionality when scrolling back to top
-        const handleScroll = () => {
-            if (window.scrollY === 0) {
-                // Small delay to ensure user actually stopped at top
-                setTimeout(() => {
-                    if (window.scrollY === 0) {
-                        window.location.reload()
-                    }
-                }, 100)
-            }
-        }
-
-        window.addEventListener('scroll', handleScroll)
-
         return () => {
             observer.disconnect()
-            window.removeEventListener('scroll', handleScroll)
         }
     }, [])
 
