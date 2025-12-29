@@ -179,6 +179,7 @@
     "natural-compare": "^1.4.0",
     "next": "^15.4.6",
     "node-releases": "^2.0.19",
+    "nodemailer": "^7.0.12",
     "normalize-range": "^0.1.2",
     "object-assign": "^4.1.1",
     "object-inspect": "^1.13.4",
@@ -280,6 +281,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "24.2.1",
+    "@types/nodemailer": "^7.0.4",
     "@types/react": "19.1.10",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6",
