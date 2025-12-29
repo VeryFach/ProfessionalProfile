@@ -9,12 +9,12 @@ export interface Certificate {
 
 export const certificates: Certificate[] = [
     {
-        title: "AWS Certified Solutions Architect",
-        issuer: "Amazon Web Services",
-        date: "2024",
-        image: "/certificates/aws.png",
+        title: "ICampN 2025 Participant",
+        issuer: "Infromation Centric Networking",
+        date: "2025",
+        image: "/certificates/ICampN_Participant.jpg",
         credentialUrl: "#",
-        skills: ["Cloud Architecture", "AWS", "DevOps"]
+        skills: ["Network Architecture", "Virtualization & IoT Fundamentals"]
     },
     {
         title: "Google Cloud Professional",

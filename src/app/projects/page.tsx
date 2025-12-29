@@ -6,8 +6,17 @@ import { useState } from 'react'
 export default function Projects() {
     const [imageErrors, setImageErrors] = useState<Record<number, boolean>>({})
 
+    // Function to check if demo is valid
     const hasValidDemo = (demo?: string) => {
+        // Temporarily disabled to avoid API key issues
         return false
+        // return demo && demo !== '#' && demo.startsWith('http')
+    }
+
+    // Function to get screenshot URL from website
+    const getScreenshotUrl = (url: string) => {
+        // Using screenshotapi.net service for website preview
+        return `https://api.screenshotmachine.com/?key=demo&url=${encodeURIComponent(url)}&dimension=1024x768`
     }
 
     const handleImageError = (index: number) => {
@@ -15,15 +24,15 @@ export default function Projects() {
     }
 
     return (
-        <div className="min-h-screen py-20 lg:py-28">
-            <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
-                {/* Header - Simple & Clean */}
-                <div className="mb-16 lg:mb-20">
-                    <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-3">
-                        Projects
+        <div className="min-h-screen py-16 sm:py-20 lg:py-32">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-12 xl:px-16 max-w-7xl">
+                {/* Header Section with Animation */}
+                <div className="text-center mb-12 sm:mb-16 lg:mb-20">
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-black mb-4 tracking-tight animate-fade-in">
+                        Featured <span className="text-white">Projects</span>
                     </h1>
-                    <p className="text-gray-300 text-lg max-w-xl">
-                        A collection of my recent work
+                    <p className="text-gray-600 text-base sm:text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+                        Explore my latest work in machine learning, web development, and software engineering
                     </p>
                 </div>
 

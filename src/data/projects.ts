@@ -8,6 +8,27 @@ export interface Project {
 
 export const projects: Project[] = [
     {
+        title: "mediScan",
+        description: "A web-based health screening and symptom analysis tool - Allows users to input symptoms and receive preliminary medical insights through a structured, decision-based analysis approach. Contributed as a Full-Stack Developer by implementing medical history tracking (allergies, diseases, scan history) and integrating location and weather data to enhance health context accuracy",
+        image: "/project/7.png",
+        github: "https://github.com/rakafdil/mediscan.git",
+        demo: "https://mediscan-smoky.vercel.app/"
+    },
+    {
+        title: "Nutrimori",
+        description: "A smart nutrition tracking web application - Designed to help users log daily food intake, analyze nutritional values, and receive personalized recommendations based on dietary patterns and individual preferences. as a Back-End Developer, I built the APIs, nutrition analysis engine, and integrated database and AI services.",
+        image: "/project/8.png",
+        github: "https://github.com/rakafdil/NutriMori.git",
+        demo: "https://nutri-mori.vercel.app/"
+    },
+    {
+        title: "GrowthWell",
+        description: "A digital platform for personal growth and well-being - Built to help users track progress, manage personal goals, and access curated self-improvement resources in a single integrated platform. I developed the Express.js API and integrated Supabase for core backend services",
+        image: "/project/9.png",
+        github: "https://github.com/rakafdil/creanomic.git",
+        demo: "https://creanomic.vercel.app/products"
+    },
+    {
         title: "Phishing Email Detection",
         description: "A model designed to classify emails as phishing or legitimate based on textual features and email metadata",
         image: "/project/2.png",
@@ -48,26 +69,5 @@ export const projects: Project[] = [
         image: "/project/6.png",
         github: "https://github.com/VeryFach/interactive-data-framework",
         demo: "#"
-    },
-    {
-        title: "mediScan",
-        description: "A web-based health screening and symptom analysis tool - Allows users to input symptoms and receive preliminary medical insights through a structured, decision-based analysis approach. Contributed as a Full-Stack Developer by implementing medical history tracking (allergies, diseases, scan history) and integrating location and weather data to enhance health context accuracy",
-        image: "/project/7.png",
-        github: "https://github.com/rakafdil/mediscan.git",
-        demo: "https://mediscan-smoky.vercel.app/"
-    },
-    {
-        title: "Nutrimori",
-        description: "A smart nutrition tracking web application - Designed to help users log daily food intake, analyze nutritional values, and receive personalized recommendations based on dietary patterns and individual preferences. as a Back-End Developer, I built the APIs, nutrition analysis engine, and integrated database and AI services.",
-        image: "/project/8.png",
-        github: "https://github.com/rakafdil/NutriMori.git",
-        demo: "https://nutrimori.vercel.app/"
-    },
-    {
-        title: "GrowthWell",
-        description: "A digital platform for personal growth and well-being - Built to help users track progress, manage personal goals, and access curated self-improvement resources in a single integrated platform. I developed the Express.js API and integrated Supabase for core backend services",
-        image: "/project/9.png",
-        github: "https://github.com/rakafdil/creanomic.git",
-        demo: "https://creanomic.vercel.app/products"
     }
 ]

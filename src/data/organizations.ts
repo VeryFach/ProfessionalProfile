@@ -10,81 +10,94 @@ export interface Organization {
 
 export const organizations: Organization[] = [
     {
-        name: "Computer Science Student Association",
-        role: "President",
-        period: "2023 - 2024",
-        description: "Leading the student organization, organizing tech events, workshops, and community building activities",
+        name: "Student Representative Council, Universitas Brawijaya (DPM UB)",
+        role: "Legislative Staff",
+        period: "Mar 2025 – Nov 2025",
+        description: "Contributed to drafting student government regulations and supporting legislative oversight.",
         type: "organization",
-        logo: "/organizations/cs-association.png",
+        logo: "/organizations/dpm-ub.png",
         achievements: [
-            "Organized 10+ tech workshops",
-            "Increased membership by 40%",
-            "Established mentorship program"
+            "Assisted in drafting and reviewing internal regulations",
+            "Supported oversight of the student executive body",
+            "Prepared administrative and research documents"
         ]
     },
     {
-        name: "Hackathon 2024",
-        role: "Technical Lead",
-        period: "March 2024",
-        description: "Led technical team for university's annual hackathon with 200+ participants",
+        name: "Raja Brawijaya",
+        role: "Public Relations Staff",
+        period: "Jun 2024 – Aug 2024",
+        description: "University-wide orientation program for new students.",
         type: "committee",
-        logo: "/organizations/hackathon.png",
+        logo: "/organizations/raja-brawijaya.png",
         achievements: [
-            "Managed infrastructure for 50+ teams",
-            "Coordinated with 15 technical mentors",
-            "Secured sponsorship worth $10,000"
+            "Supported university-level student orientation",
+            "Managed event communication and publications",
+            "Coordinated with student organizations"
         ]
     },
     {
-        name: "Tech Talk Series",
-        role: "Event Coordinator",
-        period: "2023 - Present",
-        description: "Organizing monthly tech talks and seminars with industry professionals",
+        name: "EQUALOGIC Webinar",
+        role: "Public Relations Staff",
+        period: "Oct 2023 – Dec 2023",
+        description: "Online seminar for high school students focusing on Python basics.",
         type: "committee",
-        logo: "/organizations/tech-talk.png",
+        logo: "/organizations/equalogic.png",
         achievements: [
-            "Hosted 12 successful events",
-            "Invited speakers from top tech companies",
-            "Average attendance of 150+ students"
+            "Provided technical assistance during sessions",
+            "Guided participants using Python and Google Colab",
+            "Facilitated interactive discussions"
         ]
     },
     {
-        name: "Cybersecurity Club",
-        role: "Vice President",
-        period: "2022 - 2023",
-        description: "Promoting cybersecurity awareness and organizing CTF competitions",
+        name: "Google Developer Groups on Campus (GDGoC) Brawijaya",
+        role: "Member",
+        period: "Feb 2024 – Present",
+        description: "Learning tracks in Cloud Development and Machine Learning.",
         type: "organization",
-        logo: "/organizations/cyber-club.png",
+        logo: "/organizations/gdgoc-brawijaya.png",
         achievements: [
-            "Conducted 5 CTF competitions",
-            "Trained 100+ students in security",
-            "Won regional cybersecurity challenge"
+            "Completed Cloud and ML learning tracks",
+            "Collaborated on technology-based projects",
+            "Solved technical challenges with mentors"
         ]
     },
     {
-        name: "University Open House",
-        role: "IT Infrastructure Head",
-        period: "September 2023",
-        description: "Managing all technical aspects of university's open house event",
+        name: "BEFORE 2024 (Business Expo for Entrepreneurs)",
+        role: "Volunteer Committee Member",
+        period: "Mar 2024 – May 2024",
+        description: "National entrepreneurship event organized by HMDTIF FILKOM UB.",
         type: "committee",
-        logo: "/organizations/open-house.png",
+        logo: "/organizations/before-2024.png",
         achievements: [
-            "Set up registration system for 5,000+ visitors",
-            "Managed live streaming with 10,000 viewers",
-            "Zero technical issues during event"
+            "Supported national entrepreneurship seminars",
+            "Assisted competitions, exhibitions, and mini courses",
+            "Helped coordinate Business Expo activities"
         ]
     },
     {
-        name: "DevOps Community",
-        role: "Co-Founder",
-        period: "2023 - Present",
-        description: "Building a community focused on DevOps practices and cloud technologies",
+        name: "LKI AMD FILKOM, Universitas Brawijaya",
+        role: "Communications Specialist",
+        period: "Mar 2024 – Dec 2024",
+        description: "Islamic student organization focused on spiritual and community development.",
         type: "organization",
-        logo: "/organizations/devops.png",
+        logo: "/organizations/lki-amd.png",
         achievements: [
-            "Grew community to 300+ members",
-            "Organized weekly knowledge sharing",
-            "Partnered with 3 tech companies"
+            "Managed organizational communications and publications",
+            "Supported internal events",
+            "Maintained member engagement"
+        ]
+    },
+    {
+        name: "PEMIRA Universitas Brawijaya 2024",
+        role: "Public Relations Specialist",
+        period: "Sep 2024 – Nov 2024",
+        description: "University-wide student election for executive and legislative bodies.",
+        type: "committee",
+        logo: "/organizations/pemira-ub.png",
+        achievements: [
+            "Managed PEMIRA communications and publications",
+            "Disseminated campaign and debate information",
+            "Encouraged student participation"
         ]
     }
 ]

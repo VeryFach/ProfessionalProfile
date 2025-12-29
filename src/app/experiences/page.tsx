@@ -22,11 +22,11 @@ export default function Experiences() {
                 </div>
 
                 {/* Certificates Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
                     {certificates.map((cert, index) => (
                         <div
                             key={index}
-                            className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl 
+                            className="group bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl 
                                       transition-all duration-500 ease-out hover:-translate-y-2 
                                       border-2 border-gray-100 hover:border-red-300 flex flex-col"
                             style={{
@@ -34,7 +34,7 @@ export default function Experiences() {
                             }}
                         >
                             {/* Certificate Image/Badge */}
-                            <div className="relative h-48 bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 flex items-center justify-center overflow-hidden">
+                            <div className="relative h-90 bg-gradient-to-br from-gray-100 via-gray-50 to-gray-100 flex items-center justify-center overflow-hidden">
                                 {/* Decorative Background Pattern */}
                                 <div className="absolute inset-0 opacity-10">
                                     <div className="absolute top-0 left-0 w-20 h-20 bg-red-500 rounded-full blur-2xl"></div>
@@ -54,7 +54,7 @@ export default function Experiences() {
                                     />
                                 ) : (
                                     <div className="relative z-10 text-center p-6">
-                                        <svg className="w-20 h-20 mx-auto text-red-500 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <svg className="w-24 h-24 mx-auto text-red-500 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                                         </svg>
                                         <p className="text-sm font-bold text-gray-700">{cert.issuer}</p>
@@ -119,15 +119,7 @@ export default function Experiences() {
                                             </svg>
                                             View Credential
                                         </a>
-                                    ) : (
-                                        <div className="flex items-center justify-center gap-2 w-full px-4 py-3
-                                                      bg-gray-100 text-gray-400 rounded-xl font-bold text-sm cursor-not-allowed">
-                                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                                            </svg>
-                                            Coming Soon
-                                        </div>
-                                    )}
+                                    ) : null}
                                 </div>
                             </div>
                         </div>
