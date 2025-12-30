@@ -17,12 +17,12 @@ export const certificates: Certificate[] = [
         skills: ["Network Architecture", "Virtualization & IoT Fundamentals"]
     },
     {
-        title: "Google Cloud Professional",
-        issuer: "Google Cloud",
-        date: "2024",
+        title: "Introduction to Cybersecurity",
+        issuer: "Cisco",
+        date: "2025",
         image: "/certificates/gcp.png",
         credentialUrl: "#",
-        skills: ["GCP", "Cloud Computing", "Kubernetes"]
+        skills: ["Security", "Tools", "Kubernetes"]
     },
     {
         title: "Certified Ethical Hacker",

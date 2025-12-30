@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function FeaturedProjects() {
     // Get only top 5 projects
-    const featuredProjects = projects.slice(0, 4)
+    const featuredProjects = projects.slice(0, 6)
 
     return (
         <section className="py-16 sm:py-20">

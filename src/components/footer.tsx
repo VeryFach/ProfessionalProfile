@@ -26,11 +26,11 @@ const Footer = () => {
                                     <a href="/projects" className="block text-sm sm:text-base text-gray-400 hover:text-white transition-all duration-300 tracking-wide hover:translate-x-1">
                                         Works
                                     </a>
-                                    <a href="/blog" className="block text-sm sm:text-base text-gray-400 hover:text-white transition-all duration-300 tracking-wide hover:translate-x-1">
-                                        Stories
+                                    <a href="/experiences" className="block text-sm sm:text-base text-gray-400 hover:text-white transition-all duration-300 tracking-wide hover:translate-x-1">
+                                        Experiences
                                     </a>
                                     <a href="/about" className="block text-sm sm:text-base text-gray-400 hover:text-white transition-all duration-300 tracking-wide hover:translate-x-1">
-                                        Experiences
+                                        About
                                     </a>
                                 </div>
                             </div>
@@ -40,7 +40,7 @@ const Footer = () => {
                                 </h4>
                                 <div className="space-y-2 sm:space-y-3">
                                     <a href="/contact" className="block text-sm sm:text-base text-gray-400 hover:text-white transition-all duration-300 tracking-wide hover:translate-x-1">
-                                        About
+                                        Contact
                                     </a>
                                     <a href="mailto:hello@fachru.com" className="block text-sm sm:text-base text-gray-400 hover:text-white transition-all duration-300 tracking-wide hover:translate-x-1">
                                         Email
