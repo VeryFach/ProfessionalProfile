@@ -17,43 +17,27 @@ export const certificates: Certificate[] = [
         skills: ["Network Architecture", "Virtualization & IoT Fundamentals"]
     },
     {
+        title: "Finalist - BCC 2025",
+        issuer: "Innovators League",
+        date: "2025",
+        image: "/certificates/BCC.jpg",
+        credentialUrl: "#",
+        skills: ["Digital Marketing", "SEO", "SEM"]
+    },
+    {
         title: "Introduction to Cybersecurity",
         issuer: "Cisco",
         date: "2025",
         image: "/certificates/gcp.png",
-        credentialUrl: "#",
-        skills: ["Security", "Tools", "Kubernetes"]
+        credentialUrl: "https://www.credly.com/badges/ce6bf625-6389-47c3-ba13-684777d23e1f/public_url",
+        skills: ["Cybersecurity", "Threat Detection", "Network Vulnerabilities"]
     },
     {
-        title: "Certified Ethical Hacker",
-        issuer: "EC-Council",
-        date: "2023",
-        image: "/certificates/ceh.png",
-        credentialUrl: "#",
-        skills: ["Cybersecurity", "Penetration Testing", "Network Security"]
-    },
-    {
-        title: "Machine Learning Specialization",
-        issuer: "Coursera",
-        date: "2023",
-        image: "/certificates/ml.png",
-        credentialUrl: "#",
-        skills: ["Machine Learning", "Python", "TensorFlow"]
-    },
-    {
-        title: "Docker and Kubernetes",
-        issuer: "Linux Foundation",
-        date: "2023",
-        image: "/certificates/docker.png",
-        credentialUrl: "#",
-        skills: ["Docker", "Kubernetes", "Container Orchestration"]
-    },
-    {
-        title: "Full Stack Web Development",
-        issuer: "FreeCodeCamp",
-        date: "2023",
-        image: "/certificates/fullstack.png",
-        credentialUrl: "#",
-        skills: ["React", "Node.js", "MongoDB"]
+        title: "Google Cloud Fundamentals: Core Infrastructure",
+        issuer: "Google Cloud",
+        date: "2024",
+        image: "/certificates/gcp.png",
+        credentialUrl: "https://www.credly.com/badges/8f6f3f4e-6f6e-4d3b- ninety-nine B-1234567890ab/public_url",
+        skills: ["Cloud Computing", "Google Cloud Platform", "Infrastructure"]
     }
 ]

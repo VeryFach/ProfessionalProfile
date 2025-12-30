@@ -164,8 +164,8 @@ export default function Experiences() {
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                         className="flex items-center justify-center gap-2 w-full px-4 py-3
-                                                                  bg-black text-white rounded-xl 
-                                                                  font-bold text-sm hover:bg-gray-800 
+                                                                  bg-white text-black rounded-xl 
+                                                                  font-bold text-sm hover:bg-gray-300 
                                                                   transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5"
                                                     >
                                                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
