@@ -23,7 +23,7 @@ export default function FeaturedTools() {
                 </div>
 
                 {/* Elegant Minimal Grid */}
-                <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 gap-5 sm:gap-6">
+                <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-8 gap-3 sm:gap-4 md:gap-5 lg:gap-6">
                     {tools.map((tool, index) => {
                         return (
                             <div
@@ -36,13 +36,13 @@ export default function FeaturedTools() {
                                 onMouseLeave={() => setHoveredTool(null)}
                             >
                                 {/* Tool Card */}
-                                <div className="aspect-square flex flex-col items-center justify-center p-2 cursor-pointer relative overflow-hidden">
+                                <div className="aspect-square flex flex-col items-center justify-center p-2 sm:p-3 cursor-pointer relative overflow-hidden">
                                     
 
                                     {/* Content */}
-                                    <div className="relative z-0 flex flex-col items-center justify-center h-full gap-1">
+                                    <div className="relative z-0 flex flex-col items-center justify-center h-full gap-1 sm:gap-2">
                                         {/* Logo Image */}
-                                        <div className="relative w-20 h-20 sm:w-23 sm:h-23 grayscale group-hover:grayscale-0 transition-all duration-300 transform group-hover:scale-105">
+                                        <div className="relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 grayscale group-hover:grayscale-0 transition-all duration-300 transform group-hover:scale-105">
                                             <Image
                                                 src={tool.logo}
                                                 alt={`${tool.name} logo`}
@@ -56,7 +56,7 @@ export default function FeaturedTools() {
                                         </div>
                                         
                                         {/* Name */}
-                                        <p className="text-[29px] sm:text-[20px] font-bold text-center text-gray-900 group-hover:text-white transition-colors duration-300 leading-tight px-0.5">
+                                        <p className="text-xs sm:text-sm md:text-base font-bold text-center text-gray-900 group-hover:text-white transition-colors duration-300 leading-tight px-0.5">
                                             {tool.name}
                                         </p>
                                     </div>
