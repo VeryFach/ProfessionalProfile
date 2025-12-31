@@ -96,10 +96,10 @@ const HeroSection = () => {
                     </div>
 
                     {/* Topic Bubbles Container */}
-                    <div className="relative flex items-center justify-center h-full min-h-[500px] lg:min-h-0">
+                    <div className="relative flex items-center justify-center h-full min-h-[400px] sm:min-h-[300px] lg:min-h-0">
                         {/* Strawberry Character - positioned in center */}
                         <div className="relative lg:absolute z-20 mx-auto lg:mx-0 mb-4 lg:mb-0 lg:top-2 lg:right-10 fade-in-up float-animation">
-                            <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-70 lg:h-100 relative">
+                            <div className="w-16 h-50 sm:w-20 sm:h-20 lg:w-70 lg:h-100 relative">
                                 <Image
                                     src="/image/meme.png"
                                     alt="Strawberry Character"
@@ -113,38 +113,38 @@ const HeroSection = () => {
                         {/* Topic Bubbles - arranged around the strawberry */}
                         <div className="relative w-full max-w-xs sm:max-w-md lg:max-w-2xl h-80 sm:h-96 lg:h-96 mx-auto scale-90 sm:scale-100 lg:scale-100 perspective-container">
                             {/* SECURITY - top left */}
-                            <div className="absolute top-0 left-2 sm:left-6 lg:left-10 bg-white border border-black sm:border-2 rounded-full w-20 h-10 sm:w-32 sm:h-14 lg:w-78 lg:h-28 flex items-center justify-center shadow-lg transform -rotate-12 topic-bubble glass-effect">
-                                <span className="text-black font-bold text-xs sm:text-base lg:text-5xl tracking-wide">SECURITY</span>
+                            <div className="absolute top-10 sm:top-0 left-5 sm:left-6 lg:left-10 bg-white border border-black sm:border-2 rounded-full w-30 h-10 sm:w-32 sm:h-14 lg:w-78 lg:h-28 flex items-center justify-center shadow-lg transform -rotate-12 topic-bubble glass-effect">
+                                <span className="text-black font-bold text-base sm:text-base lg:text-5xl tracking-wide">SECURITY</span>
                             </div>
 
                             {/* POLITICAL - top center, angled */}
-                            <div className="absolute top-12 sm:top-16 lg:top-31 left-1/2 transform -translate-x-1/2 bg-white border border-black sm:border-2 rounded-full w-20 h-10 sm:w-32 sm:h-14 lg:w-78 lg:h-28 flex items-center justify-center shadow-lg rotate-12 topic-bubble glass-effect">
-                                <span className="text-black font-bold text-xs sm:text-base lg:text-5xl tracking-wide">POLITICAL</span>
+                            <div className="absolute top-22 sm:top-16 lg:top-31 left-1/2 transform -translate-x-1/2 bg-white border border-black sm:border-2 rounded-full w-30 h-10 sm:w-32 sm:h-14 lg:w-78 lg:h-28 flex items-center justify-center shadow-lg rotate-12 topic-bubble glass-effect">
+                                <span className="text-black font-bold text-base sm:text-base lg:text-5xl tracking-wide">POLITICAL</span>
                             </div>
 
                             {/* MEME - top right */}
-                            <div className="absolute top-2 sm:top-4 lg:top-9 right-0 sm:right-1 lg:right-1 bg-white border border-black sm:border-2 rounded-full w-16 h-10 sm:w-24 sm:h-14 lg:w-78 lg:h-28 flex items-center justify-center shadow-lg transform rotate-6 topic-bubble glass-effect">
-                                <span className="text-black font-bold text-xs sm:text-base lg:text-5xl tracking-wide">MEME</span>
+                            <div className="absolute top-15 sm:top-4 lg:top-9 right-2 sm:right-1 lg:right-1 bg-white border border-black sm:border-2 rounded-full w-25 h-10 sm:w-24 sm:h-14 lg:w-78 lg:h-28 flex items-center justify-center shadow-lg transform rotate-6 topic-bubble glass-effect">
+                                <span className="text-black font-bold text-base sm:text-base lg:text-5xl tracking-wide">MEME</span>
                             </div>
 
                             {/* DEVSECOPS - middle left */}
-                            <div className="absolute top-24 sm:top-32 lg:top-72 left-[-20px] sm:left-[-30px] lg:left-[-40px] transform -translate-y-1/2 bg-white border border-black sm:border-2 rounded-full w-24 h-10 sm:w-36 sm:h-14 lg:w-88 lg:h-28 flex items-center justify-center shadow-lg -rotate-6 topic-bubble glass-effect">
-                                <span className="text-black font-bold text-[10px] sm:text-sm lg:text-5xl tracking-wide">DEVSECOPS</span>
+                            <div className="absolute top-37 sm:top-32 lg:top-72 left-[-20px] sm:left-[-30px] lg:left-[-40px] transform -translate-y-1/2 bg-white border border-black sm:border-2 rounded-full w-35 h-10 sm:w-36 sm:h-14 lg:w-88 lg:h-28 flex items-center justify-center shadow-lg -rotate-6 topic-bubble glass-effect">
+                                <span className="text-black font-bold text-base sm:text-sm lg:text-5xl tracking-wide">DEVSECOPS</span>
                             </div>
 
                             {/* HYBRID CLOUD - middle right */}
-                            <div className="absolute top-32 sm:top-40 lg:top-79 right-[-20px] sm:right-[-30px] lg:right-[-40px] transform -translate-y-1/2 bg-white border border-black sm:border-2 rounded-full w-28 h-10 sm:w-40 sm:h-14 lg:w-98 lg:h-28 flex items-center justify-center shadow-lg rotate-3 topic-bubble glass-effect">
-                                <span className="text-black font-bold text-[9px] sm:text-sm lg:text-5xl tracking-wide">HYBRID CLOUD</span>
+                            <div className="absolute top-40 sm:top-40 lg:top-79 right-[-20px] sm:right-[-30px] lg:right-[-40px] transform -translate-y-1/2 bg-white border border-black sm:border-2 rounded-full w-38 h-10 sm:w-40 sm:h-14 lg:w-98 lg:h-28 flex items-center justify-center shadow-lg rotate-3 topic-bubble glass-effect">
+                                <span className="text-black font-bold text-base sm:text-sm lg:text-5xl tracking-wide">HYBRID CLOUD</span>
                             </div>
 
                             {/* CONTAINER - bottom left */}
-                            <div className="absolute bottom-8 sm:bottom-4 lg:bottom-[-72px] left-4 sm:left-8 lg:left-12 bg-white border border-black sm:border-2 rounded-full w-24 h-10 sm:w-32 sm:h-14 lg:w-78 lg:h-28 flex items-center justify-center shadow-lg transform -rotate-3 topic-bubble glass-effect">
-                                <span className="text-black font-bold text-xs sm:text-base lg:text-5xl tracking-wide">CONTAINER</span>
+                            <div className="absolute bottom-28 sm:bottom-4 lg:bottom-[-72px] left-4 sm:left-8 lg:left-12 bg-white border border-black sm:border-2 rounded-full w-30 h-10 sm:w-32 sm:h-14 lg:w-78 lg:h-28 flex items-center justify-center shadow-lg transform -rotate-3 topic-bubble glass-effect">
+                                <span className="text-black font-bold text-base sm:text-base lg:text-5xl tracking-wide">CONTAINER</span>
                             </div>
 
                             {/* CS:GO - bottom center */}
-                            <div className="absolute bottom-0 sm:bottom-[-10px] lg:bottom-[-105px] left-1/2 lg:left-128 transform -translate-x-1/2 bg-white border border-black sm:border-2 rounded-full w-16 h-10 sm:w-24 sm:h-14 lg:w-78 lg:h-28 flex items-center justify-center shadow-lg rotate-6 topic-bubble glass-effect">
-                                <span className="text-black font-bold text-xs sm:text-base lg:text-5xl tracking-wide">CS:GO</span>
+                            <div className="absolute bottom-23 sm:bottom-[-10px] lg:bottom-[-105px] left-50 lg:left-128 transform -translate-x-1/2 bg-white border border-black sm:border-2 rounded-full w-30 h-10 sm:w-24 sm:h-14 lg:w-78 lg:h-28 flex items-center justify-center shadow-lg rotate-6 topic-bubble glass-effect">
+                                <span className="text-black font-bold text-base sm:text-base lg:text-5xl tracking-wide">CS:GO</span>
                             </div>
                         </div>
                     </div>
