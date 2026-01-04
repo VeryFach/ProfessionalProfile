@@ -22,6 +22,13 @@ export const projects: Project[] = [
         demo: "https://nutri-mori.vercel.app/"
     },
     {
+        title: "KlikRasa",
+        description: "A platform for exploring traditional cakes across regions with historical insights, summaries, and AI-powered chat, where I handle backend development and MongoDB integration.",
+        image: "/project/13.png",
+        github: "https://github.com/AIYayay-Berbudaya/klikrasa-backend.git",
+        demo: "https://klikrasa.vercel.app/"
+    },
+    {
         title: "GrowthWell",
         description: "A digital personal growth platform for tracking goals, monitoring progress, and accessing curated self-improvement resources, built with an Express.js backend integration.",
         image: "/project/9.png",
