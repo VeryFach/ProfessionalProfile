@@ -49,7 +49,7 @@ const HeroSection = () => {
                     <div className="absolute inset-0 flex items-center justify-center">
                         <div className="w-full max-w-[300px] sm:max-w-[380px] lg:max-w-[480px] h-[350px] sm:h-[450px] lg:h-[600px] relative overflow-hidden rounded-lg">
                             <Image
-                                src="/image/hero.jpg"
+                                src="/image/hero.webp"
                                 alt="Silhouette"
                                 fill
                                 className="object-cover silhouette-image"
