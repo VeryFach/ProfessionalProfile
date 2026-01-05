@@ -101,7 +101,7 @@ const HeroSection = () => {
                         <div className="relative lg:absolute z-20 mx-auto lg:mx-0 mb-4 lg:mb-0 lg:top-2 lg:right-10 fade-in-up float-animation">
                             <div className="w-16 h-50 sm:w-20 sm:h-20 lg:w-70 lg:h-100 relative">
                                 <Image
-                                    src="/image/meme.png"
+                                    src="/image/meme.webp"
                                     alt="Strawberry Character"
                                     fill
                                     className="object-contain"
@@ -155,7 +155,7 @@ const HeroSection = () => {
                     <div className="absolute inset-0 flex items-center justify-center">
                         <div className="w-full max-w-[280px] sm:max-w-[320px] lg:max-w-[380px] h-[300px] sm:h-[400px] lg:h-[600px] relative overflow-hidden rounded-lg">
                             <Image
-                                src="/image/hero2.png"
+                                src="/image/hero2.webp"
                                 alt="Atmospheric"
                                 fill
                                 className="object-cover silhouette-image"

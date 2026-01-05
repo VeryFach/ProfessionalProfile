@@ -12,7 +12,7 @@ export const certificates: Certificate[] = [
         title: "ICampN 2025 Participant",
         issuer: "Infromation Centric Networking",
         date: "2025",
-        image: "/certificates/ICampN_Participant.jpg",
+        image: "/certificates/ICampN_Participant.webp",
         credentialUrl: "#",
         skills: ["Network Architecture", "Virtualization & IoT Fundamentals"]
     },
@@ -20,7 +20,7 @@ export const certificates: Certificate[] = [
         title: "Finalist - BCC 2025",
         issuer: "Innovators League",
         date: "2025",
-        image: "/certificates/BCC.jpg",
+        image: "/certificates/BCC.webp",
         credentialUrl: "#",
         skills: ["Digital Marketing", "SEO", "SEM"]
     },

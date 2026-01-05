@@ -15,7 +15,7 @@ export const organizations: Organization[] = [
         period: "Mar 2025 – Nov 2025",
         description: "Contributed to drafting student government regulations and supporting legislative oversight.",
         type: "organization",
-        logo: "/organizations/dpm-ub.png",
+        logo: "/organizations/dpm-ub.webp",
         achievements: [
             "Assisted in drafting and reviewing internal regulations",
             "Supported oversight of the student executive body",
@@ -28,7 +28,7 @@ export const organizations: Organization[] = [
         period: "Jun 2024 – Aug 2024",
         description: "University-wide orientation program for new students.",
         type: "committee",
-        logo: "/organizations/raja-brawijaya.png",
+        logo: "/organizations/rb.webp",
         achievements: [
             "Supported university-level student orientation",
             "Managed event communication and publications",
@@ -41,7 +41,7 @@ export const organizations: Organization[] = [
         period: "Oct 2023 – Dec 2023",
         description: "Online seminar for high school students focusing on Python basics.",
         type: "committee",
-        logo: "/organizations/equalogic.png",
+        logo: "/organizations/equalogic.webp",
         achievements: [
             "Provided technical assistance during sessions",
             "Guided participants using Python and Google Colab",
@@ -54,7 +54,7 @@ export const organizations: Organization[] = [
         period: "Feb 2024 – Present",
         description: "Learning tracks in Cloud Development and Machine Learning.",
         type: "organization",
-        logo: "/organizations/gdgoc-brawijaya.png",
+        logo: "/organizations/gdgoc.webp",
         achievements: [
             "Completed Cloud and ML learning tracks",
             "Collaborated on technology-based projects",
@@ -67,7 +67,7 @@ export const organizations: Organization[] = [
         period: "Mar 2024 – May 2024",
         description: "National entrepreneurship event organized by HMDTIF FILKOM UB.",
         type: "committee",
-        logo: "/organizations/before-2024.png",
+        logo: "/organizations/before-2024.webp",
         achievements: [
             "Supported national entrepreneurship seminars",
             "Assisted competitions, exhibitions, and mini courses",
@@ -80,7 +80,7 @@ export const organizations: Organization[] = [
         period: "Mar 2024 – Dec 2024",
         description: "Islamic student organization focused on spiritual and community development.",
         type: "organization",
-        logo: "/organizations/lki-amd.png",
+        logo: "/organizations/lki.webp",
         achievements: [
             "Managed organizational communications and publications",
             "Supported internal events",
@@ -93,7 +93,7 @@ export const organizations: Organization[] = [
         period: "Sep 2024 – Nov 2024",
         description: "University-wide student election for executive and legislative bodies.",
         type: "committee",
-        logo: "/organizations/pemira-ub.png",
+        logo: "/organizations/pemira.webp",
         achievements: [
             "Managed PEMIRA communications and publications",
             "Disseminated campaign and debate information",
