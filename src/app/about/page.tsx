@@ -28,9 +28,10 @@ export default function About() {
                             {/* Introduction Card */}
                             <div className="bg-white border-2 border-gray-200 rounded-2xl p-6 sm:p-8 hover:border-black transition-all duration-300 hover:shadow-2xl">
                                 <p className="text-lg sm:text-xl font-medium text-black leading-relaxed mb-4">
-                                    Hello! I'm <span className="font-black text-black">Fachru</span>, an enthusiastic 
-                                    <span className="font-bold"> Backend Developer</span> and 
-                                    <span className="font-bold"> Network Engineer</span>
+                                    Hello! I'm <span className="font-black text-black">Very Fachrurozi</span>, an enthusiastic 
+                                    <span className="font-bold"> Software Development</span>
+                                    <span className="font-bold"> cloud computing</span> and 
+                                    <span className="font-bold">Computer Networks</span> enthusiast.
                                 </p>
                                 <p className="text-base text-gray-700 leading-relaxed">
                                     Focused on distributed systems, API architecture, and optimizing reliable 
