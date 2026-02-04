@@ -1,6 +1,6 @@
 'use client'
 
-import { certificates, organizations } from '@/data'
+import { certificates, organizations, experiences } from '@/data'
 import { useState } from 'react'
 
 type ViewType = 'certificates' | 'organizations'
@@ -17,8 +17,89 @@ export default function Experiences() {
                         Certifications & <span className="text-white">Experience</span>
                     </h1>
                     <p className="text-gray-300 text-base sm:text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-                        Professional certifications and credentials earned through continuous learning
+                        Professional experience and certifications earned through continuous learning and practical implementation
                     </p>
+                </div>
+
+                {/*Experience section*/}
+                <div className="mb-12 sm:mb-16 lg:mb-20">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-8 text-center">
+                        Work Experience
+                    </h2>
+                    
+                    <div className="relative">
+                        {/* Timeline Line */}
+                        <div className="absolute left-4 sm:left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-gray-600 via-gray-400 to-gray-600 hidden md:block"></div>
+                        
+                        <div className="space-y-6 sm:space-y-8">
+                            {experiences.map((exp, index) => (
+                                <div
+                                    key={index}
+                                    className="group relative md:pl-16 lg:pl-20"
+                                    style={{
+                                        animation: `fadeInUp 0.6s ease-out ${index * 0.15}s both`
+                                    }}
+                                >
+                                    {/* Timeline Dot */}
+                                    <div className="absolute left-2 sm:left-6 top-6 w-4 h-4 bg-white border-4 border-gray-800 rounded-full hidden md:block group-hover:scale-125 transition-transform duration-300 z-10"></div>
+                                    
+                                    <div className="bg-white rounded-xl sm:rounded-2xl p-5 sm:p-6 lg:p-8 shadow-lg hover:shadow-2xl 
+                                                  transition-all duration-500 ease-out hover:-translate-y-1 
+                                                  border-2 border-gray-200 hover:border-black">
+                                        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4 mb-4">
+                                            <div className="flex-1">
+                                                {/* Role */}
+                                                <h3 className="text-xl sm:text-2xl font-bold text-black mb-2 group-hover:text-gray-700 transition-colors duration-300">
+                                                    {exp.role}
+                                                </h3>
+                                                
+                                                {/* Company */}
+                                                <div className="flex items-center gap-2 text-gray-700 font-semibold mb-2">
+                                                    <svg className="w-5 h-5 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                                    </svg>
+                                                    <span className="text-base sm:text-lg">{exp.company}</span>
+                                                </div>
+                                                
+                                                {/* Location */}
+                                                <div className="flex items-center gap-2 text-gray-600">
+                                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                                    </svg>
+                                                    <span className="text-sm sm:text-base">{exp.location}</span>
+                                                </div>
+                                            </div>
+                                            
+                                            {/* Date Badge */}
+                                            <div className="flex items-center gap-2 px-4 py-2 bg-gray-900 text-white rounded-full text-sm font-bold whitespace-nowrap self-start">
+                                                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
+                                                </svg>
+                                                <span>{exp.startDate} - {exp.endDate || 'Present'}</span>
+                                            </div>
+                                        </div>
+                                        
+                                        {/* Description */}
+                                        <div className="pt-4 border-t border-gray-200">
+                                            <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
+                                                {exp.description}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                    
+                    {experiences.length === 0 && (
+                        <div className="text-center py-12">
+                            <svg className="w-16 h-16 mx-auto text-gray-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <p className="text-gray-400 text-lg">No work experience added yet.</p>
+                        </div>
+                    )}
                 </div>
 
                 {/* Filter Navigation */}

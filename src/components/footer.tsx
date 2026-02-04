@@ -112,18 +112,6 @@ const Footer = () => {
 
                     <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 lg:gap-8 order-1 sm:order-2">
                         <a
-                            href="/#"
-                            className="text-xs sm:text-sm text-gray-500 hover:text-gray-300 transition-colors duration-300 tracking-wide"
-                        >
-                            Privacy Policy
-                        </a>
-                        <a
-                            href="/#"
-                            className="text-xs sm:text-sm text-gray-500 hover:text-gray-300 transition-colors duration-300 tracking-wide"
-                        >
-                            Terms of Service
-                        </a>
-                        <a
                             href="#top"
                             className="group flex items-center gap-2 text-xs sm:text-sm text-gray-400 hover:text-white transition-all duration-300 bg-gray-800 hover:bg-gray-700 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full"
                         >
