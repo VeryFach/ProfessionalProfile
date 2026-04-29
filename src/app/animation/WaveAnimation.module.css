@@ -1,0 +1,182 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0;
+}
+
+.waveContainer {
+    width: 100%;
+    max-width: 100%;
+    height: 150px;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.2));
+}
+
+.wave {
+    animation: flowWave 8s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    transform-origin: center;
+}
+
+.waveLayer1,
+.waveLayer2,
+.waveLayer3 {
+    opacity: 0.15;
+}
+
+.waveStroke {
+    animation: flowWave 8s cubic-bezier(0.42, 0, 0.58, 1) infinite, pulseGlow 4s ease-in-out infinite;
+    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.3));
+}
+
+.wave2 {
+    animation-delay: -2.5s;
+}
+
+.wave2.waveStroke {
+    animation-delay: -2.5s, -1s;
+}
+
+.wave3 {
+    animation-delay: -5s;
+}
+
+.wave3.waveStroke {
+    animation-delay: -5s, -3s;
+}
+
+@keyframes flowWave {
+    0% {
+        transform: translateX(0);
+        opacity: 0.6;
+    }
+
+    25% {
+        opacity: 0.8;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateX(-600px);
+        opacity: 0.6;
+    }
+}
+
+@keyframes pulseGlow {
+    0% {
+        filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.2));
+        stroke-width: 5px;
+    }
+
+    50% {
+        filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.4));
+        stroke-width: 5.5px;
+    }
+
+    100% {
+        filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.2));
+        stroke-width: 5px;
+    }
+}
+
+/* Pixel Animation */
+.pixelGroup {
+    mix-blend-mode: screen;
+}
+
+.pixel {
+    animation: pixelFlow 8s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.6));
+}
+
+@keyframes pixelFlow {
+    0% {
+        transform: translateX(0);
+        opacity: 0.4;
+        r: 2px;
+    }
+
+    20% {
+        opacity: 0.8;
+        r: 3.5px;
+    }
+
+    50% {
+        opacity: 1;
+        r: 4px;
+    }
+
+    80% {
+        opacity: 0.8;
+        r: 3.5px;
+    }
+
+    100% {
+        transform: translateX(-600px);
+        opacity: 0.4;
+        r: 2px;
+    }
+}
+
+/* Glow Pixel Animation */
+.glowPixels {
+    mix-blend-mode: screen;
+}
+
+.glowPixel {
+    animation: glowPulse 3s ease-in-out infinite;
+    filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.5));
+}
+
+@keyframes glowPulse {
+    0% {
+        r: 1px;
+        opacity: 0.3;
+    }
+
+    50% {
+        r: 3px;
+        opacity: 1;
+    }
+
+    100% {
+        r: 1px;
+        opacity: 0.3;
+    }
+}
+
+/* Animasi alternatif: wave undulation */
+@keyframes waveUndulate {
+    0% {
+        d: path('M0,150 Q150,50 300,150 T600,150 T900,150 T1200,150');
+    }
+
+    50% {
+        d: path('M0,150 Q150,80 300,150 T600,150 T900,150 T1200,150');
+    }
+
+    100% {
+        d: path('M0,150 Q150,50 300,150 T600,150 T900,150 T1200,150');
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        height: auto;
+        min-height: 400px;
+    }
+
+    .waveContainer {
+        height: 200px;
+    }
+}

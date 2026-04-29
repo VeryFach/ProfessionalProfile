@@ -14,6 +14,6 @@ export const experiences: Experience[] = [
         startDate: "Januari 2026",
         endDate: "Juni 2026",
         location: "Kota Malang, Malang",
-        description: "Developed and maintained web applications using React and Node.js, improving user experience and performance."
+        description: " Developed responsive websites using WordPress and backend systems with Laravel, including API integration and database management. Implemented workflow automation using n8n to improve process efficiency and system integration."
     }
 ]
