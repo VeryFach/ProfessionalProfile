@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const Footer = () => {
     return (
         <footer className="bg-gradient-to-t from-black via-gray-900 to-black text-white py-12 sm:py-16 lg:py-20">
@@ -23,15 +25,15 @@ const Footer = () => {
                                     EXPLORE
                                 </h4>
                                 <div className="space-y-2 sm:space-y-3">
-                                    <a href="/projects" className="block text-sm sm:text-base text-gray-400 hover:text-white transition-all duration-300 tracking-wide hover:translate-x-1">
+                                    <Link href="/projects" className="block text-sm sm:text-base text-gray-400 hover:text-white transition-all duration-300 tracking-wide hover:translate-x-1">
                                         Works
-                                    </a>
-                                    <a href="/experiences" className="block text-sm sm:text-base text-gray-400 hover:text-white transition-all duration-300 tracking-wide hover:translate-x-1">
+                                    </Link>
+                                    <Link href="/experiences" className="block text-sm sm:text-base text-gray-400 hover:text-white transition-all duration-300 tracking-wide hover:translate-x-1">
                                         Experiences
-                                    </a>
-                                    <a href="/about" className="block text-sm sm:text-base text-gray-400 hover:text-white transition-all duration-300 tracking-wide hover:translate-x-1">
+                                    </Link>
+                                    <Link href="/about" className="block text-sm sm:text-base text-gray-400 hover:text-white transition-all duration-300 tracking-wide hover:translate-x-1">
                                         About
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div>
@@ -39,9 +41,9 @@ const Footer = () => {
                                     CONNECT
                                 </h4>
                                 <div className="space-y-2 sm:space-y-3">
-                                    <a href="/contact" className="block text-sm sm:text-base text-gray-400 hover:text-white transition-all duration-300 tracking-wide hover:translate-x-1">
+                                    <Link href="/contact" className="block text-sm sm:text-base text-gray-400 hover:text-white transition-all duration-300 tracking-wide hover:translate-x-1">
                                         Contact
-                                    </a>
+                                    </Link>
                                     <a href="mailto:hello@fachru.com" className="block text-sm sm:text-base text-gray-400 hover:text-white transition-all duration-300 tracking-wide hover:translate-x-1">
                                         Email
                                     </a>

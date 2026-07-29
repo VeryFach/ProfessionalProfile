@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    experimental: {
-        appDir: true, // untuk mengaktifkan app router jika di src/app
-    },
-};
+  images: {
+    formats: ['image/avif', 'image/webp'],
+  },
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig

@@ -50,7 +50,7 @@ const HeroSection = () => {
                         <div className="w-full max-w-[300px] sm:max-w-[380px] lg:max-w-[480px] h-[350px] sm:h-[450px] lg:h-[600px] relative overflow-hidden rounded-lg">
                             <Image
                                 src="/image/hero.webp"
-                                alt="Silhouette"
+                                alt="Very Fachrurozi — Backend Developer & Computer Science Student"
                                 fill
                                 className="object-cover silhouette-image"
                                 priority
@@ -70,7 +70,7 @@ const HeroSection = () => {
                                 BACKEND FIRST<br />
                                 FRONTEND CAPABLE.<br />
                                 DATA CRUNCHING.<br />
-                                CLOUDS FLOATING.
+                                CLOUDS SURFING.
                             </h2>
                         </div>
 
@@ -102,7 +102,7 @@ const HeroSection = () => {
                             <div className="w-16 h-50 sm:w-20 sm:h-20 lg:w-70 lg:h-100 relative">
                                 <Image
                                     src="/image/meme.webp"
-                                    alt="Strawberry Character"
+                                    alt="Very Fachrurozi interests — security, political, meme, DevSecOps"
                                     fill
                                     className="object-contain"
                                     sizes="(max-width: 640px) 64px, (max-width: 1024px) 80px, 280px"
@@ -134,7 +134,7 @@ const HeroSection = () => {
 
                             {/* HYBRID CLOUD - middle right */}
                             <div className="absolute top-40 sm:top-40 lg:top-79 right-[-20px] sm:right-[-30px] lg:right-[-40px] transform -translate-y-1/2 bg-white border border-black sm:border-2 rounded-full w-38 h-10 sm:w-40 sm:h-14 lg:w-98 lg:h-28 flex items-center justify-center shadow-lg rotate-3 topic-bubble glass-effect">
-                                <span className="text-black font-bold text-base sm:text-sm lg:text-5xl tracking-wide">HYBRID CLOUD</span>
+                                <span className="text-black font-bold text-base sm:text-sm lg:text-5xl tracking-wide">CLOUD FINOPS</span>
                             </div>
 
                             {/* CONTAINER - bottom left */}
@@ -144,7 +144,7 @@ const HeroSection = () => {
 
                             {/* CS:GO - bottom center */}
                             <div className="absolute bottom-23 sm:bottom-[-10px] lg:bottom-[-105px] left-50 lg:left-128 transform -translate-x-1/2 bg-white border border-black sm:border-2 rounded-full w-30 h-10 sm:w-24 sm:h-14 lg:w-78 lg:h-28 flex items-center justify-center shadow-lg rotate-6 topic-bubble glass-effect">
-                                <span className="text-black font-bold text-base sm:text-base lg:text-5xl tracking-wide">CS:GO</span>
+                                <span className="text-black font-bold text-base sm:text-base lg:text-5xl tracking-wide">CS-2</span>
                             </div>
                         </div>
                     </div>
@@ -156,7 +156,7 @@ const HeroSection = () => {
                         <div className="w-full max-w-[280px] sm:max-w-[320px] lg:max-w-[380px] h-[300px] sm:h-[400px] lg:h-[600px] relative overflow-hidden rounded-lg">
                             <Image
                                 src="/image/hero2.webp"
-                                alt="Atmospheric"
+                                alt="Very Fachrurozi — Atmospheric Portrait showcasing computer science passion"
                                 fill
                                 className="object-cover silhouette-image"
                                 sizes="(max-width: 640px) 90vw, (max-width: 1024px) 60vw, 40vw"

@@ -1,6 +1,7 @@
 'use client'
 
 import { projects } from '@/data/projects'
+import Image from 'next/image'
 import { useState } from 'react'
 
 export default function Projects() {
@@ -50,15 +51,13 @@ export default function Projects() {
                             {/* Project Image */}
                             <div className="relative overflow-hidden aspect-video bg-gray-50">
                                 {project.image ? (
-                                    <img
+                                    <Image
                                         src={project.image}
-                                        alt={project.title}
-                                        className="w-full h-full object-cover transition-transform duration-500 
+                                        alt={`${project.title} — project by Very Fachrurozi`}
+                                        fill
+                                        className="object-cover transition-transform duration-500 
                                                     group-hover:scale-105 grayscale group-hover:grayscale-0"
-                                        onError={(e) => {
-                                            const target = e.target as HTMLImageElement
-                                            target.style.display = 'none'
-                                        }}
+                                        sizes="(max-width: 768px) 100vw, 50vw"
                                     />
                                 ) : (
                                     <div className="w-full h-full flex items-center justify-center">
