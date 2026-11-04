@@ -1,11 +1,8 @@
 import type { Metadata } from 'next'
-import { Space_Grotesk } from 'next/font/google'
 import '../styles/globals.css'
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 import Script from 'next/script'
-
-const spaceGrotesk = Space_Grotesk({ subsets: ['latin'] })
 
 const siteUrl = 'https://fachru.vercel.app'
 const siteName = 'Very Fachrurozi'
@@ -94,14 +91,14 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={spaceGrotesk.className}>
+      <body>
         <Script
           id="schema-person"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <Navbar />
-        <main className="pt-10">{children}</main>
+        <main id="top" className="pt-10">{children}</main>
         <Footer />
       </body>
     </html>

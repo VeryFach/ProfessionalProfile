@@ -1,15 +1,59 @@
 'use client'
 
 import { organizations } from '@/data'
+import { useEffect, useRef, useState } from 'react'
+
+// These original logo files are absent from public/. Preserve the data paths.
+const unavailableOrganizationLogos = new Set([
+    '/organizations/equalogic.webp',
+    '/organizations/before-2024.webp',
+])
+
+function OrganizationLogo({ src, name }: { src?: string; name: string }) {
+    const [failed, setFailed] = useState(false)
+    const imageRef = useRef<HTMLImageElement>(null)
+
+    useEffect(() => {
+        if (imageRef.current?.complete && imageRef.current.naturalWidth === 0) {
+            setFailed(true)
+        }
+    }, [src])
+
+    if (!src || unavailableOrganizationLogos.has(src) || failed) {
+        return (
+            <div
+                className="w-12 h-12 sm:w-16 sm:h-16 rounded-lg sm:rounded-xl bg-gradient-to-br from-gray-800 to-black flex items-center justify-center flex-shrink-0"
+                role="img"
+                aria-label={`Logo unavailable for ${name}`}
+            >
+                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+            </div>
+        )
+    }
+
+    return (
+        <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-lg sm:rounded-xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-200 flex items-center justify-center flex-shrink-0">
+            <img
+                ref={imageRef}
+                src={src}
+                alt={name}
+                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
+                onError={() => setFailed(true)}
+            />
+        </div>
+    )
+}
 
 export default function OrganizationsSection() {
     return (
         <div className="animate-fadeIn">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+            <div className="organization-grid grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
                 {organizations.map((org, index) => (
                     <div
                         key={index}
-                        className="group bg-white rounded-xl sm:rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl 
+                        className="organization-card group bg-white rounded-xl sm:rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl
                                   transition-all duration-500 ease-out hover:-translate-y-2 
                                   border-2 border-gray-200 hover:border-black flex flex-col"
                         style={{
@@ -20,25 +64,7 @@ export default function OrganizationsSection() {
                             {/* Header with Logo & Type Badge */}
                             <div className="flex items-start justify-between gap-3 mb-4">
                                 <div className="flex items-center gap-3 sm:gap-4 flex-1 min-w-0">
-                                    {org.logo ? (
-                                        <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-lg sm:rounded-xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-200 flex items-center justify-center flex-shrink-0">
-                                            <img
-                                                src={org.logo}
-                                                alt={org.name}
-                                                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
-                                                onError={(e) => {
-                                                    const target = e.target as HTMLImageElement
-                                                    target.style.display = 'none'
-                                                }}
-                                            />
-                                        </div>
-                                    ) : (
-                                        <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-lg sm:rounded-xl bg-gradient-to-br from-gray-800 to-black flex items-center justify-center flex-shrink-0">
-                                            <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                                            </svg>
-                                        </div>
-                                    )}
+                                    <OrganizationLogo src={org.logo} name={org.name} />
                                     <div className="flex-1 min-w-0">
                                         <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-black leading-tight mb-1 group-hover:text-gray-700 transition-colors duration-300 break-words">
                                             {org.name}

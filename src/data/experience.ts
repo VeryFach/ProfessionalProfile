@@ -9,27 +9,30 @@ export interface Experience {
 
 export const experiences: Experience[] = [
     {
-        role: "Backend Development Intern",
-        company: "Berbinar Insightful Indonesia",
-        startDate: "Agustus 2026",
-        endDate: "Present",
-        location: "Kec. Jambangan, Kota Surabaya",
-        description: "Developed responsive websites backend systems with Laravel, including API integration and database management. Implemented workflow automation using n8n to improve process efficiency and system integration."
+        role: "Backend Developer Intern",
+        company: "PT Berbinar Insightful Indonesia",
+        startDate: "Jul 2025",
+        endDate: null,
+        location: "Surabaya, Indonesia",
+        description:
+            "Maintained Laravel backend services, MySQL databases, and Nginx configurations while developing REST APIs and backend features. Conducted functional and end-to-end testing using Playwright to validate application workflows and improve system reliability."
     },
     {
-        role: "Web Development Intern",
+        role: "Web Developer Intern",
         company: "Dako Brand & Communication",
-        startDate: "Januari 2026",
-        endDate: "Juni 2026",
-        location: "Kota Malang, Malang",
-        description: "Built and optimized cross-platform web and mobile solutions while implementing backend workflow automations to maximize system reliability and operational efficiency."
+        startDate: "Feb 2026",
+        endDate: "Jun 2026",
+        location: "Malang, Indonesia",
+        description:
+            "Developed and deployed five responsive WordPress websites and a React Native mobile application. Implemented two workflow automation solutions using n8n, Next.js, Midtrans API, and Telegram Bot integrations, reducing manual processing effort by 75%. Optimized website performance and security."
     },
     {
         role: "Data Science Intern",
-        company: "Basic Computing Community",
-        startDate: "Februari 2025",
-        endDate: "Maret 2025",
-        location: "University Brawijaya, Malang",
-        description: "Developed an obesity classification model on 2,111 records using XGBoost, achieving a 97.4% F1-score while reducing features by 47.1% through statistical feature selection and feature importance analysis."
-    },
+        company: "Basic Computing Community (BCC FILKOM)",
+        startDate: "Feb 2025",
+        endDate: "Mar 2025",
+        location: "Malang, Indonesia",
+        description:
+            "Developed machine learning models for obesity classification and phishing email detection using XGBoost, Random Forest, NLP, and feature engineering. Achieved a 97.4% F1-score on 2,111 obesity records and a 99.4% ROC-AUC score on 82.5K emails."
+    }
 ]

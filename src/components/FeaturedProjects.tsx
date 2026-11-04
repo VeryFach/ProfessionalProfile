@@ -5,49 +5,56 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export default function FeaturedProjects() {
-    // Get only top 5 projects
-    const featuredProjects = projects.slice(0, 6)
+    const featuredProjects = projects.slice(0, 4)
+    const contributions = [
+        'Hospital search, availability checks, and health articles',
+        'APIs, nutrition analysis, database, and AI integration',
+        'Backend development and MongoDB integration',
+        'Express.js backend integration',
+    ]
 
     return (
-        <section className="py-16 sm:py-20">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-12 xl:px-16 max-w-7xl">
+        <section className="featured-work" aria-labelledby="featured-work-title">
+            <div className="featured-work-shell">
                 {/* Section Header */}
-                <div className="text-center mb-12 sm:mb-16">
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-black mb-4">
-                        RECENT <span className="text-black-600">PROJECT</span>
+                <header className="featured-work-heading">
+                    <p className="ds-label">SELECTED WORK / 01—04</p>
+                    <h2 id="featured-work-title" className="ds-heading">
+                        PROJECTS <em>WITH PURPOSE.</em>
                     </h2>
-                    <p className="text-BLACK text-base sm:text-lg max-w-2xl mx-auto">
-                        SHOWCASING MY LATEST WORK IN WEB DEVELOPMENT, MACHINE LEARNING, AND SOFTWARE ENGINEERING
+                    <p className="featured-work-intro">
+                        REAL PRODUCTS, REAL PROBLEMS, AND THE PART I PLAYED IN BUILDING THEM.
                     </p>
-                </div>
+                </header>
 
                 {/* Projects Grid - Minimalist Design */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+                <div className="featured-work-grid">
                     {featuredProjects.map((project, index) => (
-                        <div
+                        <article
                             key={index}
-                            className="group relative bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+                            className="featured-case group"
                         >
                             {/* Project Image */}
-                            <div className="relative h-64 sm:h-80 bg-gray-200 overflow-hidden">
+                            <div className="featured-case-image">
                                 <Image
                                     src={project.image}
                                     alt={`${project.title} — project by Very Fachrurozi`}
                                     fill
-                                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                                     sizes="(max-width: 768px) 100vw, 50vw"
                                 />
                                 {/* Overlay on hover */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                                <div className="featured-case-shade" aria-hidden="true" />
                                 
                                 {/* Quick Links */}
-                                <div className="absolute bottom-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div className="featured-case-links">
                                     {project.demo && project.demo !== '#' && (
                                         <a
                                             href={project.demo}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="p-2 bg-white rounded-lg hover:bg-gray-400 hover:text-white transition-colors duration-200"
+                                            aria-label={`Open ${project.title} live demo`}
+                                            className="featured-case-icon-link"
                                             onClick={(e) => e.stopPropagation()}
                                         >
                                             <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -60,7 +67,8 @@ export default function FeaturedProjects() {
                                             href={project.github}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="p-2 bg-white rounded-lg hover:bg-gray-400 hover:text-white transition-colors duration-200"
+                                            aria-label={`View ${project.title} source code`}
+                                            className="featured-case-icon-link"
                                             onClick={(e) => e.stopPropagation()}
                                         >
                                             <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
@@ -72,29 +80,31 @@ export default function FeaturedProjects() {
                             </div>
 
                             {/* Project Info */}
-                            <div className="p-6 sm:p-8">
-                                <h3 className="text-xl sm:text-2xl font-bold text-black mb-3 transition-colors duration-300">
+                            <div className="featured-case-content">
+                                <h3>
                                     {project.title}
                                 </h3>
-                                <p className="text-gray-600 text-base line-clamp-3">
+                                <p className="featured-case-description">
                                     {project.description}
                                 </p>
+                                <p className="featured-case-role">
+                                    MY ROLE — {contributions[index]}
+                                </p>
                             </div>
-                        </div>
+                        </article>
                     ))}
                 </div>
 
                 {/* View All Button */}
-                <div className="text-center">
+                <div className="featured-work-footer">
                     <Link
                         href="/projects"
-                        className="inline-flex items-center text-black font-bold text-lg transition-all duration-300 hover:-translate-y-0.5 relative group"
+                        className="featured-work-link group"
                     >
                         View All Projects
                         <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>
-                        <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full" />
                     </Link>
                 </div>
             </div>

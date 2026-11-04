@@ -4,7 +4,7 @@ export interface MenuItem {
 }
 
 export const menuItems: MenuItem[] = [
-    { label: '</>', href: '/' },
+    { label: 'HOME', href: '/' },
     { label: 'WORKS', href: '/projects' },
     { label: 'EXPERIENCE', href: '/experiences' },
     { label: 'ABOUT', href: '/about' },
