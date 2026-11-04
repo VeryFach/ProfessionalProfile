@@ -11,7 +11,7 @@ export const experiences: Experience[] = [
     {
         role: "Backend Developer Intern",
         company: "PT Berbinar Insightful Indonesia",
-        startDate: "Jul 2025",
+        startDate: "Jul 2026",
         endDate: null,
         location: "Surabaya, Indonesia",
         description:
